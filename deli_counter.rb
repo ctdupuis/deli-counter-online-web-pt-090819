@@ -25,6 +25,7 @@ def take_a_number(array, person)
     end
   elsif array != []
     array << person
+<<<<<<< HEAD
     puts "Welcome, #{array[-1]}. You are number #{array.length} in line."
   end
 end
@@ -36,4 +37,14 @@ def now_serving(array)
     puts "Currently serving #{array[0]}."
     array.shift
   end
+=======
+    array.each_with_index do |name, index|
+      puts "Welcome, #{name}. You are number #{index + 1} in line."
+    end
+  end
+end
+
+def now_serving
+  
+>>>>>>> 7d372ed40bfb0b642faed73925ea4ea76e6bed57
 end
